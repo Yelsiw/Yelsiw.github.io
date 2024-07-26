@@ -1,0 +1,82 @@
+body {
+  /* other style properties */
+  background-image: url('https://telegra.ph/file/bf9b4d5f846b115a931cc.jpg');
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#password-strength-checker {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#password-strength-checker form {
+  display: inline-block;
+}
+
+#password-strength-checker input[type="password"] {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#password-strength-checker button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#password-strength-checker #result {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  max-width: 300px;
+  clear: both;
+}
+
+#password-strength-checker .result-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: max-content;
+}
+
+#password-strength-checker .very-weak {
+  background-color: tomato;
+}
+
+#password-strength-checker .weak {
+  background-color: lightsalmon;
+}
+
+#password-strength-checker .moderate {
+  background-color: yellow;
+}
+
+#password-strength-checker .strong {
+  background-color: lightgreen;
+}
+
+#password-strength-checker .secure {
+  background-color: green;
+}
