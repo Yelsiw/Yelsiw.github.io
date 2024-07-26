@@ -28,21 +28,21 @@ function checkPasswordStrength() {
   resultDiv.classList.remove("very-weak", "weak", "moderate", "strong", "secure");
 
   if (!hasNumber) {
-    message += "Adicione pelo menos um número. ";
+    message += "Adicione um número. ";
     resultDiv.classList.add("very-weak");
     resultDiv.innerHTML = `<span class="result-message very-weak">${message}</span>`;
     return;
   }
 
   if (!hasUppercase) {
-    message += "Adicione pelo menos uma letra maiúscula. ";
+    message += "Adicione uma letra maiúscula. ";
     resultDiv.classList.add("weak");
     resultDiv.innerHTML = `<span class="result-message weak">${message}</span>`;
     return;
   }
 
   if (!hasSymbol) {
-    message += "Adicione pelo menos um símbolos. ";
+    message += "Adicione um símbolos. ";
     resultDiv.classList.add("moderate");
     resultDiv.innerHTML = `<span class="result-message moderate">${message}</span>`;
     return;
